@@ -1,0 +1,75 @@
+﻿@using NotDefteri_AspNetMvc
+@model NotDefteri.Entities.ND_Note
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Sil</h2>
+        <hr />
+    </div>
+    <div class="col-md-4 col-md-offset-4">
+        <h4>Not</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Category.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Category.Title)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Text)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Text)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.IsDraft)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.IsDraft)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.LikeCount)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.LikeCount)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    @Bootstrap.Button("submit", "danger", "", "remove-circle", "Sil")
+                    @Bootstrap.LinkButton("/Note/Index/", "default", "", "", "arrow-left", "Listeye geri dön")
+                </div>
+            }
+        </div>
+    </div>
+</div>

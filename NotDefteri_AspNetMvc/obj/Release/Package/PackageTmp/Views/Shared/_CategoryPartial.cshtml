@@ -1,0 +1,18 @@
+﻿@using NotDefteri_AspNetMvc.Models
+@using NotDefteri.Entities
+
+@{
+    List<ND_Category> categories = CacheHelper.GetCategoriesFromCache();
+}
+<p class="lead">Kategoriler</p>
+<div class="list-group">
+    <a href="/Home/Index" class="list-group-item">
+        <span class="glyphicon glyphicon-triangle-right"></span> Tümü
+    </a>
+    @foreach (ND_Category item in categories)
+    {
+        <a href="/Home/ByCategory/@item.Id" title="@item.Description" class="list-group-item">
+            <span class="glyphicon glyphicon-chevron-right"></span> @item.Title
+        </a>
+    }
+</div>

@@ -1,0 +1,5 @@
+C:\Users\Erhan Külekci\documents\visual studio 2015\Projects\NotDefteri_Solution\NotDefteri.Common\bin\Release\NotDefteri.Common.dll
+C:\Users\Erhan Külekci\documents\visual studio 2015\Projects\NotDefteri_Solution\NotDefteri.Common\bin\Release\NotDefteri.Common.pdb
+C:\Users\Erhan Külekci\documents\visual studio 2015\Projects\NotDefteri_Solution\NotDefteri.Common\obj\Release\NotDefteri.Common.csprojResolveAssemblyReference.cache
+C:\Users\Erhan Külekci\documents\visual studio 2015\Projects\NotDefteri_Solution\NotDefteri.Common\obj\Release\NotDefteri.Common.dll
+C:\Users\Erhan Külekci\documents\visual studio 2015\Projects\NotDefteri_Solution\NotDefteri.Common\obj\Release\NotDefteri.Common.pdb
